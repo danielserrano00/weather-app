@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "single page client & Node - Weather App",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon ./src/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielserrano00/weather-app.git"
+  },
+  "author": "Daniel Serrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielserrano00/weather-app/issues"
+  },
+  "homepage": "https://github.com/danielserrano00/weather-app#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  }
+}
