@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2 {
+    margin: 20% auto auto auto;
+    align: center;
+    text-align: center;
+    color: black;
+    font-family: 'Questrial', sans-serif;
+}

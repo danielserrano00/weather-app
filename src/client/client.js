@@ -1,18 +1,16 @@
+const sun = 'http://portugalresident.com/sites/default/files/styles/node-detail/public/field/image/sunny-pics-005.jpg?itok=9ZCt9YUU'
+const rain = 'https://d1w9csuen3k837.cloudfront.net/Pictures/1280x720/8/9/2/129892_shutterstock_433625311-crop.jpg'
+const snow = 'http://460xn7309grtq8dgf9er612l-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/6-Tips-for-Moving-When-Its-Snowing-Clear-a-Path.jpg'
+const cloud = 'https://cdn-cloudflare.pelfusion.com/wp-content/uploads/2009/07/treeinclouds.jpg'
 
+document.getElementById('body').background=sun
+document.getElementById('city').textContent='Charlotte'
 
 //find button and add click event handler
 document.getElementById('button-get')
   .addEventListener('click', function (e) {
     //on click, set pre tag to Loading...
     setElementText('json-block', 'Loading...')
-
-    // example post on click - only logs req.body on server side
-    callApi('add', 'POST', {
-      billy:{
-        displayName: 'Billy',
-        age: 34
-      }
-    })
 
     //get value from our input
     const value = document.getElementById('text-field').value
@@ -27,7 +25,14 @@ document.getElementById('button-get')
     })
 
   })
+const data = ''
 
+// if (navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(function(position) {
+//     data = "latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+//   }
+// }
+// console.log(data)
 /**
  * API Call Handler
  */
