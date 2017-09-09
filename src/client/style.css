@@ -4,12 +4,32 @@ body {
 
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: slategrey;
 }
 
-h1, h2 {
-    margin: 20% auto auto auto;
+h1 {
+    margin: 2% auto auto auto;
     align: center;
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Questrial', sans-serif;
 }
+
+h2 {
+    margin: auto;
+    align: center;
+    text-align: center;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-transform: capitalize;
+
+}
+
+img {
+    height: 100px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
