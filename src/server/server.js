@@ -5,7 +5,6 @@ const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const http = require('http').Server(app)
 const path = require('path')
-const apiRouter = require('./routes/api')
 const indexRouter = require('./routes/index')
 const PORT = 8080
 const STATIC_PATH = path.join(__dirname,
@@ -23,7 +22,6 @@ app.use(cookieParser())               // parses cookies
 app.use(express.static(STATIC_PATH))  // use static path
 
 // routes
-app.use('/api', apiRouter)
 app.use('*', indexRouter)
 
 // start server
